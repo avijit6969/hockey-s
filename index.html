@@ -15,29 +15,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'hockeys-primary': '#FF4240',
+                    }
+                }
+            }
+        }
+        </script>
 
     <style>
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        hockeys-primary: '#FF4240',
-                }
-            }
-        }
-    }
-    </script>
+    
 </head>
 
 <body class="font-manrope ">
     <nav class="container mx-auto">
         <div class="navbar bg-base-100">
-            <div class="flex-1">
+            <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -47,27 +48,28 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
                     </ul>
                 </div>
-                <a class="text-4xl">Hockey’s</a>
+                <a class="btn btn-ghost text-3xl"><p>Hockey<span class="text-hockeys-primary">’</span>s</p></a>
             </div>
-            <div class="navbar-center hidden lg:flex lg:justify-center lg:mr-[500px]">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a href=""><span class="text-hockeys-primary">Home</span></a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            <div class="">
-                <a class="btn btn-success bg-hockeys-primary  text-white">Get Ticket</a>
+            <div class="navbar-end">
+                <div class="hidden lg:block"><i class="fa-solid fa-magnifying-glass pr-4 "></i></div>
+                <a class="btn bg-hockeys-primary text-white font-bold px-11">Get Ticket</a>
             </div>
         </div>
     </nav>
@@ -106,87 +108,391 @@
         </div>
     </header>
 
+    <main class="font-manrope container mx-auto my-20">
 
-    <main class="container mx-auto">
-        <!-- Professional-section -->
-        <section class="">
-            <div class="border-dashed">
+        <div class="border-b-[2px] border-dashed"></div>
+        <!-- Professional Hockeys Club start -->
+        <section class="my-12 space-y-3">
 
-            </div>
-            <div class="text-center text-[#131318] mt-12">
-                <h1 class="text-2xl font-extrabold">Professional Hockeys Club</h1>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
-                    sit nullam proin. </p>
-            </div>
-            <div class="">
 
-                <div>
-                    <div class="radial-progress text-primary rotate-[130deg]" style="--value:70;" role="progressbar">
-                        <span class="rotate-[-130deg]">87%</span> </div>
-                    <h3>Prayer Facility</h3>
+            <h1 class="text-4xl font-extrabold text-center">
+                Professional Hockeys Club
+            </h1>
+            <p class="text-center">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                placerat dolor. Purus urna in sit nullam proin.
+            </p>
+            <div class="border-b-[2px] border-dashed"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-4">
+                <div class="space-y-3 text-center p-12">
+                    <div class="radial-progress rotate-[130deg] text-error" style="--value: 87" role="progressbar">
+                        <span class="-rotate-[130deg] text-black">87%</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold">Prayer Facility</h3>
                     <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
-
-
-
-
-
-            </div>
-
-
-        </section>
-        <!-- Professional-section -->
-
-        <!-- Program Sections -->
-        <section>
-            <div class="text-center">
-                <h1 class="text-2xl font-extrabold">Program Sections</h1>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna
-                    in sit nullam proin. </p>
-            </div>
-            <div>
-                <div>
-                    <h1>Junior Program</h1>
-                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
-                        sed et in.</p>
-                    <button class="btn btn-primary">Register Now!</button>
+                <div class="space-y-3 text-center p-12">
+                    <div class="radial-progress rotate-[130deg] text-error" style="--value: 95" role="progressbar">
+                        <span class="-rotate-[130deg] text-black">95%</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold">Prayer Facility</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
                 </div>
-
+                <div class="space-y-3 text-center p-12">
+                    <div class="radial-progress rotate-[130deg] text-error" style="--value: 90" role="progressbar">
+                        <span class="-rotate-[130deg] text-black">90%</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold">Prayer Facility</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="space-y-3 text-center p-12">
+                    <div class="radial-progress rotate-[130deg] text-error" style="--value: 80" role="progressbar">
+                        <span class="-rotate-[130deg] text-black">80%</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold">Prayer Facility</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
             </div>
+
         </section>
+       <!-- Professional Hockeys Club end -->
+
+
+        <div class="border-b-[2px] border-dashed"></div>
+
+        <!-- Program Sections start -->
+        <section class="my-20">
+            <h1 class="text-4xl pb-3 font-extrabold text-center">
+              Program Sections
+            </h1>
+            <p class="text-center">
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+              placerat dolor. Purus urna in sit nullam proin.
+            </p>
+            <div class="pt-5 grid grid-cols-1 gap-5 lg:grid-cols-2">
+              <div
+                class="h-96 bg-[url('/Images/2.png')] rounded-2xl bg-cover bg-center"
+              >
+                <div
+                  class="w-full p-10 h-full flex items-end rounded-2xl backdrop-brightness-50"
+                >
+                  <div class="space-y-2">
+                    <h3 class="text-2xl font-bold text-white">Junior Program</h3>
+                    <p class="text-white">
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                      elit enim sagittis turpis in magna. Id et sed euismod natoque
+                      amet nunc morbi nulla. Tortor congue sed et in.
+                    </p>
+                    <button class="btn bg-primary-color px-2 border-0 text-white">
+                      Register Now!
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+    
+    
+              <div
+                class="h-96 bg-[url('/Images/3.png')] rounded-2xl bg-cover bg-center"
+              >
+                <div
+                  class="w-full p-10 h-full flex items-end rounded-2xl backdrop-brightness-50"
+                >
+                  <div class="space-y-2">
+                    <h3 class="text-2xl font-bold text-white">Junior Program</h3>
+                    <p class="text-white">
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                      elit enim sagittis turpis in magna. Id et sed euismod natoque
+                      amet nunc morbi nulla. Tortor congue sed et in.
+                    </p>
+                    <button class="btn bg-primary-color px-2 border-0 text-white">
+                      Register Now!
+                    </button>
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div
+                class="h-96 bg-[url('/Images/4.png')] rounded-2xl bg-cover bg-center lg:col-span-2  "
+              >
+                <div
+                  class="w-full p-10 h-full flex items-end rounded-2xl backdrop-brightness-50"
+                >
+                  <div class="space-y-2 lg:w-2/4">
+                    <h3 class="text-2xl font-bold text-white">Junior Program</h3>
+                    <p class="text-white">
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                      elit enim sagittis turpis in magna. Id et sed euismod natoque
+                      amet nunc morbi nulla. Tortor congue sed et in.
+                    </p>
+                    <button class="btn bg-primary-color px-2 border-0 text-white">
+                      Register Now!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- Program Sections end -->
+
+        <div class="border-b-[2px] border-dashed"></div>
+
+        <!-- Our New Products section start -->
+        <section class="my-20">
+
+            <h1 class="text-4xl text-center font-extrabold pb-3">
+                Our New Products
+            </h1>
+            <p class="text-center">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                placerat dolor. Purus urna in sit nullam proin.
+            </p>
+
+            <div class="border-b-[2px] border-dashed"></div>
+            
+            <div class="grid pt-10 grid-cols-1 gap-10 lg:grid-cols-2">
+                <div class="flex flex-col border-2 p-3 rounded-lg gap-3 lg:flex-row">
+                    <img src="/Images/5.png" alt="" />
+                    <div class="space-y-2">
+                        <div class="flex flex-row gap-9">
+                            <i class="fa-solid text-yellow-400 fa-star">
+                                <span class="text-black">5.00</span></i>
+                            
+                            <i class="fa-solid fa-eye">20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                        <h3 class="text-2xl font-semibold py-1">
+                            Cap For Hockeys
+                        </h3>
+                        <p class="w-2/3">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="flex flex-row justify-between items-center pt-2 font-extrabold">
+                            <p class="text-secondary-color font-bold text-[#FF4240]">Price - $22.00</p>
+                            <i class="fa-solid fa-cart-plus ml-32"></i>Delivery Fee : Free
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 p-3 rounded-lg gap-3 lg:flex-row">
+                    <img src="/Images/5.png" alt="" />
+                    <div class="space-y-2">
+                        <div class="flex flex-row gap-9">
+                            <i class="fa-solid text-yellow-400 fa-star">
+                                <span class="text-black">5.00</span></i>
+                            
+                            <i class="fa-solid fa-eye">20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                        <h3 class="text-2xl font-semibold py-1">
+                            Cap For Hockeys
+                        </h3>
+                        <p class="w-2/3">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="flex flex-row justify-between items-center pt-2 font-extrabold">
+                            <p class="text-secondary-color font-bold text-[#FF4240]">Price - $22.00</p>
+                            <i class="fa-solid fa-cart-plus ml-32"></i>Delivery Fee : Free
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 p-3 rounded-lg gap-3 lg:flex-row">
+                    <img src="/Images/5.png" alt="" />
+                    <div class="space-y-2">
+                        <div class="flex flex-row gap-9">
+                            <i class="fa-solid text-yellow-400 fa-star">
+                                <span class="text-black">5.00</span></i>
+                            
+                            <i class="fa-solid fa-eye">20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                        <h3 class="text-2xl font-semibold py-1">
+                            Cap For Hockeys
+                        </h3>
+                        <p class="w-2/3">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="flex flex-row justify-between items-center pt-2 font-extrabold">
+                            <p class="text-secondary-color font-bold text-[#FF4240]">Price - $22.00</p>
+                            <i class="fa-solid fa-cart-plus ml-32"></i>Delivery Fee : Free
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 p-3 rounded-lg gap-3 lg:flex-row">
+                    <img src="/Images/5.png" alt="" />
+                    <div class="space-y-2">
+                        <div class="flex flex-row gap-9">
+                            <i class="fa-solid text-yellow-400 fa-star">
+                                <span class="text-black">5.00</span></i>
+                            
+                            <i class="fa-solid fa-eye">20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                        <h3 class="text-2xl font-semibold py-1">
+                            Cap For Hockeys
+                        </h3>
+                        <p class="w-2/3">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="flex flex-row justify-between items-center pt-2 font-extrabold">
+                            <p class="text-secondary-color font-bold text-[#FF4240]">Price - $22.00</p>
+                            <i class="fa-solid fa-cart-plus ml-32"></i>Delivery Fee : Free
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 p-3 rounded-lg gap-3 lg:flex-row">
+                    <img src="/Images/5.png" alt="" />
+                    <div class="space-y-2">
+                        <div class="flex flex-row gap-9">
+                            <i class="fa-solid text-yellow-400 fa-star">
+                                <span class="text-black">5.00</span></i>
+                            
+                            <i class="fa-solid fa-eye">20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                        <h3 class="text-2xl font-semibold py-1">
+                            Cap For Hockeys
+                        </h3>
+                        <p class="w-2/3">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="flex flex-row justify-between items-center pt-2 font-extrabold">
+                            <p class="text-secondary-color font-bold text-[#FF4240]">Price - $22.00</p>
+                            <i class="fa-solid fa-cart-plus ml-32"></i>Delivery Fee : Free
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col border-2 p-3 rounded-lg gap-3 lg:flex-row">
+                    <img src="/Images/5.png" alt="" />
+                    <div class="space-y-2">
+                        <div class="flex flex-row gap-9">
+                            <i class="fa-solid text-yellow-400 fa-star">
+                                <span class="text-black">5.00</span></i>
+                            
+                            <i class="fa-solid fa-eye">20</i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                        </div>
+                        <h3 class="text-2xl font-semibold py-1">
+                            Cap For Hockeys
+                        </h3>
+                        <p class="w-2/3">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        </p>
+                        <div class="flex flex-row justify-between items-center pt-2 font-extrabold">
+                            <p class="text-secondary-color font-bold text-[#FF4240]">Price - $22.00</p>
+                            <i class="fa-solid fa-cart-plus ml-32"></i>Delivery Fee : Free
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+        </section>
+        <!-- Our New Products section end -->
+
+        <!-- Clients Question section start-->
+        <section>
+            <h1 class="text-4xl font-extrabold text-center pb-4">Clients Question</h1>
+            <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            <div class="mt-5 flex flex-col gap-5 border-2 rounded-2xl p-8 lg:flex-row ">
+                <div class="w-full lg:w-2/5"><img class="w-full" src="Images/11.png" alt=""></div>
+                <div class="space-y-2 w-full lg:w-3/5">
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            <h3 class="text-xl font-bold">Our Equipment</h3>
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                     <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                          Click to open this one and close others
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                </div>
+            </div>   
+
+        </section>
+       <!-- Clients Question section end -->
     </main>
 
-        <footer class="footer p-10 bg-neutral text-neutral-content h-96 items-center">
-            <nav class="ml-28">
-              <header class="footer-title">Get In Touch</header> 
-              <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
-              <h4> <i class="fa-regular fa-envelope"></i>hockeys@support.com</h4>
-              <h4> <i class="fa-solid fa-phone"></i>(+62) 123-321-543</h4>
-            </nav>
-            <nav>
-              <header class="footer-title">Services</header> 
-              <a class="link link-hover">Branding</a>
-              <a class="link link-hover">Design</a>
-              <a class="link link-hover">Marketing</a>
-              <a class="link link-hover">Advertisement</a>
-            </nav> 
-            <nav>
-              <header class="footer-title">Company</header> 
-              <a class="link link-hover">About us</a>
-              <a class="link link-hover">Contact</a>
-              <a class="link link-hover">Jobs</a>
-              <a class="link link-hover">Press kit</a>
-            </nav> 
-            <nav>
-              <header class="footer-title">Legal</header> 
-              <a class="link link-hover">Terms of use</a>
-              <a class="link link-hover">Privacy policy</a>
-              <a class="link link-hover">Cookie policy</a>
-            </nav>
+    <footer class="footer p-10 bg-neutral text-neutral-content h-96 items-center">
+        <nav class="ml-28">
+            <header class="footer-title">Get In Touch</header>
+            <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit
+                nullam proin. </p>
+            <h4> <i class="fa-regular fa-envelope"></i>hockeys@support.com</h4>
+            <h4> <i class="fa-solid fa-phone"></i>(+62) 123-321-543</h4>
+        </nav>
+        <nav>
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Legal</header>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
 
-          </footer>
-          <script src="https://kit.fontawesome.com/ad34da65e9.js" crossorigin="anonymous"></script>
+    </footer>
+    <script src="https://kit.fontawesome.com/ad34da65e9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
